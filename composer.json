@@ -1,13 +1,13 @@
 {
-    "name": "hassamulhaq/epic-ecommerce",
+    "name": "hassamulhaq/epic-ecommerce-laravel",
     "type": "project",
-    "description": "A free and open-source ecommerce application.",
+    "description": "An open-source ecommerce application based on Laravel",
     "keywords": [
         "ecommerce",
         "online store",
         "estore"
     ],
-    "homepage": "https://epic-ecommerce.hassam.dev",
+    "homepage": "https://epic-ecommerce-laravel.hassam.dev",
     "license": "MIT",
     "require": {
         "php": "^8.1.0",
