@@ -4,10 +4,14 @@ namespace App\Models;
 
 use App\Helpers\UserHelper;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Ramsey\Uuid\Uuid;
 
 class Cart extends Model
 {
+
+    use SoftDeletes;
+
     protected $table = 'cart';
 
     protected $fillable = [
