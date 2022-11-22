@@ -54,7 +54,7 @@ class Cart extends Model
 
     public function CartItemsWithProduct(): \Illuminate\Database\Eloquent\Relations\HasMany
     {
-        return $this->cartItems()->with('product.productFlat');
+        return $this->cartItems()->with('product.productFlat')->groupBy('cart_id');
     }
 
     public function CartDistinctItemsWithProduct(): \Illuminate\Database\Eloquent\Relations\HasMany

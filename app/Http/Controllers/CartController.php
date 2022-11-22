@@ -34,6 +34,10 @@ class CartController extends Controller
             ->whereIsGuest(is_null($userId))
             ->first();
 
+
+        dd($cart);
+        //$x = CartItem::query()->
+
         return view('frontend.cart.index', compact('cart'));
     }
 
