@@ -17,7 +17,6 @@ class CreateCountryTranslationsTable extends Migration
             $table->id();
             $table->string('locale');
             $table->text('name')->nullable();
-
             $table->foreignId('country_id')->constrained('countries')->cascadeOnDelete();
         });
     }
